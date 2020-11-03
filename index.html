@@ -92,6 +92,79 @@
                 </ul>
             </div>
         </div>
+        <!-- Web api fetch test-->
+        <button type="button" id="fetchBtn" class="btn btn-primary"> 
+            Fetch Data 
+        </button>
+
+        <div class="container">
+            <h1>Employee List</h1>
+            <ul id="list"></ul>
+        </div>
+
+        <script>
+            let fetchBtn = document.getElementById("fetchBtn");
+
+            fetchBtn.addEventListener("click", buttonclickhandler);
+
+            function buttonclickhandler() {
+
+                // Instantiate an new XHR Object 
+                const xhr = new XMLHttpRequest();
+
+                xhr.open("GET",
+                    "https://rickandmortyapi.com/api/character/", true);
+
+                //  xhr.open("GET",
+                // "https://bugtracker20201031145059.azurewebsites.net/api/Tickets/", true);
+
+                xhr.onload = function() {
+                    if (this.status === 200) {
+
+                        // Changing string data into JSON Object 
+                        obj = JSON.parse(this.responseText);
+
+                        // Getting the ul element 
+                        let list = document.getElementById("list");
+                        str = ""
+                        for (key in obj.results) {
+                            str +=
+                                `<li>${obj.results[key].name}</li>`;
+                        }
+                        list.innerHTML = str;
+                    } else {
+                        console.log("File not found");
+                    }
+                    // if (this.status === 200) {
+
+                    //     // Changing string data into JSON Object 
+                    //     obj = JSON.parse(this.responseText);
+
+                    //     // Getting the ul element 
+                    //     let list = document.getElementById("list");
+                    //     str = ""
+                    //         //     for (key in obj.results) {
+                    //     str +=
+                    //         `<li>${obj}</li>`;
+                    //     //     }
+                    //     list.innerHTML = str;
+                    // } else {
+                    //     console.log("File not found");
+                    // }
+                }
+                xhr.send();
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+        <!--end of web api test-->
     </main>
 </body>
 
