@@ -45,42 +45,47 @@
     </header>
     <main class="my-5">
         <div class="container container-wide">
+
+
             <div class="row mb-5 mb-sm-4">
                 <div class="col-sm-6 px-0 px-sm-2">
                     <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
                         <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div><img aria-hidden="true" src="images/map.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
                                     <picture>
-                                        <source srcset="
-                                            /images/map.png 150w,
-                                            /images/map.png 300w,
-                                            /images/map.png 600w,
-                                            /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" 
-                                            />
-                                            <img
-                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="
-                                            /images/map.png 150w,
+                                        <source srcset="/images/map.png 150w,
+                                        /images/map.png 300w,
+                                        /images/map.png 600w,
+                                        /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
+                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/572a252b6e1e34b40aa499beb1074257/aabdf/america.jpg 150w,
                                             /images/map.png 300w,
                                             /images/map.png 600w,
                                             /images/map.png 800w"
                                             src="/images/map.png" alt=""
-                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" 
-                                            />
+                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
                                     </picture>
                                 </noscript>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
-                        <h5 class="mb-1">Hello World</h5>
+                        <h5 class="mb-1">America</h5>
                         <div class="text-muted">
-                            <div>1998</div>
+                            <div>6 years old &middot; 1998</div>
                         </div>
                     </div>
                     <div>
-                        <p>born</p>
+                        <p>handball
+                        </p>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
 
             <div class="row mb-5 mb-sm-4">
                 <div class="col-sm-6 px-0 px-sm-2">
@@ -243,8 +248,283 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+            <div class="modal fade" id="mathModal" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Math Functions</h4>
+                            <button type="button" class="close" data-dismiss="modal" onclick="ClearMathData()">×</button>
+                        </div>
+
+
+                        <div class="modal-body">
+                            <div class="container">
+                                <h1>Let's Do Some Math!</h1>
+
+                                Input 5 numbers between <b>1</b> and <b>100</b>.
+                                <br>
+                                <br>
+                                <!--Input Boxes-->
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p><input id="num1" type="number" name="quantity" min="1" max="100"></p>
+                                        <p><input id="num2" type="number" name="quantity" min="1" max="100"></p>
+                                        <p><input id="num3" type="number" name="quantity" min="1" max="100"></p>
+                                        <p><input id="num4" type="number" name="quantity" min="1" max="100"></p>
+                                        <p><input id="num5" type="number" name="quantity" min="1" max="100"></p>
+                                    </div>
+
+                                    <div class="col-sm-8">
+                                        <!--Labels to display results-->
+                                        <p></p>
+                                        <div id="min"></div>
+                                        <p></p>
+                                        <p></p>
+                                        <div id="max"></div>
+                                        <p></p>
+                                        <p></p>
+                                        <div id="mean"></div>
+                                        <p></p>
+                                        <p></p>
+                                        <div id="sum"></div>
+                                        <p></p>
+                                        <p></p>
+                                        <div id="product"></div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <p><button id="submit" class="btn btn-primary" onclick="SolveMath()">Submit</button></p>
+                                <p><button id="clear" class="btn btn-outline-primary" onclick="ClearMathData()">Clear</button></p>
+                                <p><button id="mathToggle" class="btn btn-outline-info" onclick="ToggleMathCode()">Show Code</button></p>
+
+
+                            </div>
+                            <div class="container" id="mathCode" style="display: none">
+                                <div>
+                                    <div id="highlighter_374009" class="syntaxhighlighter  js">
+                                        <div class="toolbar"><span><a href="http://shaneseblackportfolio.azurewebsites.net/#" class="toolbar_item command_help help">?</a></span></div>
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="gutter">
+                                                        <div class="line number1 index0 alt2">1</div>
+                                                        <div class="line number2 index1 alt1">2</div>
+                                                        <div class="line number3 index2 alt2">3</div>
+                                                        <div class="line number4 index3 alt1">4</div>
+                                                        <div class="line number5 index4 alt2">5</div>
+                                                        <div class="line number6 index5 alt1">6</div>
+                                                        <div class="line number7 index6 alt2">7</div>
+                                                        <div class="line number8 index7 alt1">8</div>
+                                                        <div class="line number9 index8 alt2">9</div>
+                                                        <div class="line number10 index9 alt1">10</div>
+                                                        <div class="line number11 index10 alt2">11</div>
+                                                        <div class="line number12 index11 alt1">12</div>
+                                                        <div class="line number13 index12 alt2">13</div>
+                                                        <div class="line number14 index13 alt1">14</div>
+                                                        <div class="line number15 index14 alt2">15</div>
+                                                        <div class="line number16 index15 alt1">16</div>
+                                                        <div class="line number17 index16 alt2">17</div>
+                                                        <div class="line number18 index17 alt1">18</div>
+                                                        <div class="line number19 index18 alt2">19</div>
+                                                        <div class="line number20 index19 alt1">20</div>
+                                                        <div class="line number21 index20 alt2">21</div>
+                                                        <div class="line number22 index21 alt1">22</div>
+                                                        <div class="line number23 index22 alt2">23</div>
+                                                        <div class="line number24 index23 alt1">24</div>
+                                                        <div class="line number25 index24 alt2">25</div>
+                                                        <div class="line number26 index25 alt1">26</div>
+                                                        <div class="line number27 index26 alt2">27</div>
+                                                        <div class="line number28 index27 alt1">28</div>
+                                                        <div class="line number29 index28 alt2">29</div>
+                                                        <div class="line number30 index29 alt1">30</div>
+                                                        <div class="line number31 index30 alt2">31</div>
+                                                        <div class="line number32 index31 alt1">32</div>
+                                                        <div class="line number33 index32 alt2">33</div>
+                                                        <div class="line number34 index33 alt1">34</div>
+                                                        <div class="line number35 index34 alt2">35</div>
+                                                        <div class="line number36 index35 alt1">36</div>
+                                                        <div class="line number37 index36 alt2">37</div>
+                                                        <div class="line number38 index37 alt1">38</div>
+                                                        <div class="line number39 index38 alt2">39</div>
+                                                        <div class="line number40 index39 alt1">40</div>
+                                                        <div class="line number41 index40 alt2">41</div>
+                                                        <div class="line number42 index41 alt1">42</div>
+                                                        <div class="line number43 index42 alt2">43</div>
+                                                    </td>
+                                                    <td class="code">
+                                                        <div class="container">
+                                                            <div class="line number1 index0 alt2"><code class="js comments">//This is the beginning of the Math functions</code></div>
+                                                            <div class="line number2 index1 alt1"><code class="js keyword">function</code> <code class="js plain">SolveMath() {</code></div>
+                                                            <div class="line number3 index2 alt2">&nbsp;</div>
+                                                            <div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//This assigns the input numbers to variables</code></div>
+                                                            <div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num1 = parseInt(document.getElementById(</code><code class="js string">"num1"</code><code class="js plain">).value);</code></div>
+                                                            <div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num2 = parseInt(document.getElementById(</code><code class="js string">"num2"</code><code class="js plain">).value);</code></div>
+                                                            <div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num3 = parseInt(document.getElementById(</code><code class="js string">"num3"</code><code class="js plain">).value);</code></div>
+                                                            <div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num4 = parseInt(document.getElementById(</code><code class="js string">"num4"</code><code class="js plain">).value);</code></div>
+                                                            <div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num5 = parseInt(document.getElementById(</code><code class="js string">"num5"</code><code class="js plain">).value);</code></div>
+                                                            <div class="line number10 index9 alt1">&nbsp;</div>
+                                                            <div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Check to ensure all numbers entered are between 1 and 100</code></div>
+                                                            <div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code> <code class="js plain">(num1 &gt; 100 || num2 &gt; 100 || num3 &gt; 100 || num4 &gt; 100 || num5 &gt; 100) {</code></div>
+                                                            <div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(</code><code class="js string">"Please enter a number between 1 and 100."</code>
+                                                                <code class="js plain">);</code>
+                                                            </div>
+                                                            <div class="line number14 index13 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ClearMathData();</code></div>
+                                                            <div class="line number15 index14 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code><code class="js plain">;</code></div>
+                                                            <div class="line number16 index15 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div>
+                                                            <div class="line number17 index16 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code> <code class="js plain">(num1 &lt; 1 || num2 &lt; 1 || num3 &lt; 1 || num4 &lt; 1 || num5 &lt; 1) {</code></div>
+                                                            <div class="line number18 index17 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(</code><code class="js string">"Please enter a number between 1 and 100."</code>
+                                                                <code class="js plain">);</code>
+                                                            </div>
+                                                            <div class="line number19 index18 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ClearMathData();</code></div>
+                                                            <div class="line number20 index19 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code><code class="js plain">;</code></div>
+                                                            <div class="line number21 index20 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div>
+                                                            <div class="line number22 index21 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Check to ensure user enter numbers</code></div>
+                                                            <div class="line number23 index22 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code> <code class="js plain">(isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4) || isNaN(num5)) {</code></div>
+                                                            <div class="line number24 index23 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(</code><code class="js string">"Please enter a number between 1 and 100."</code>
+                                                                <code class="js plain">);</code>
+                                                            </div>
+                                                            <div class="line number25 index24 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ClearMathData();</code></div>
+                                                            <div class="line number26 index25 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code><code class="js plain">;</code></div>
+                                                            <div class="line number27 index26 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div>
+                                                            <div class="line number28 index27 alt1">&nbsp;</div>
+                                                            <div class="line number29 index28 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Perform math operations</code></div>
+                                                            <div class="line number30 index29 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">min = Math.min(num1, num2, num3, num4, num5);</code></div>
+                                                            <div class="line number31 index30 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">max = Math.max(num1, num2, num3, num4, num5);</code></div>
+                                                            <div class="line number32 index31 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">sum = num1 + num2 + num3 + num4 + num5;</code></div>
+                                                            <div class="line number33 index32 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">mean = sum / 5;</code></div>
+                                                            <div class="line number34 index33 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">product = num1 * num2 * num3 * num4 * num5;</code></div>
+                                                            <div class="line number35 index34 alt2">&nbsp;</div>
+                                                            <div class="line number36 index35 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Display math results</code></div>
+                                                            <div class="line number37 index36 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'min'</code><code class="js plain">).innerHTML = </code>
+                                                                <code class="js string">"The smallest number is "</code> <code class="js plain">+ min;</code></div>
+                                                            <div class="line number38 index37 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'max'</code><code class="js plain">).innerHTML = </code>
+                                                                <code class="js string">"The largest number is "</code> <code class="js plain">+ max;</code></div>
+                                                            <div class="line number39 index38 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'sum'</code><code class="js plain">).innerHTML = </code>
+                                                                <code class="js string">"The sum of the numbers is "</code> <code class="js plain">+ sum;</code></div>
+                                                            <div class="line number40 index39 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'mean'</code><code class="js plain">).innerHTML = </code>
+                                                                <code class="js string">"The mean is "</code> <code class="js plain">+ mean;</code></div>
+                                                            <div class="line number41 index40 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'product'</code><code class="js plain">).innerHTML = </code>
+                                                                <code class="js string">"The product is "</code> <code class="js plain">+ product;</code></div>
+                                                            <div class="line number42 index41 alt1">&nbsp;</div>
+                                                            <div class="line number43 index42 alt2"><code class="js plain">}</code></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="ClearMathData()">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
     </main>
+    <script src="js/main.js"></script>
+    <script>
+        //This is the beginning of the Math functions
+        function SolveMath() {
+
+            //This assigns the input numbers to variables
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let num3 = parseInt(document.getElementById("num3").value);
+            let num4 = parseInt(document.getElementById("num4").value);
+            let num5 = parseInt(document.getElementById("num5").value);
+
+            //Check to ensure all numbers entered are between 1 and 100
+            if (num1 > 100 || num2 > 100 || num3 > 100 || num4 > 100 || num5 > 100) {
+                alert("Please enter a number between 1 and 100.");
+                ClearMathData();
+                return;
+            }
+            if (num1 < 1 || num2 < 1 || num3 < 1 || num4 < 1 || num5 < 1) {
+                alert("Please enter a number between 1 and 100.");
+                ClearMathData();
+                return;
+            }
+            //Check to ensure user enter numbers
+            if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4) || isNaN(num5)) {
+                alert("Please enter a number between 1 and 100.");
+                ClearMathData();
+                return;
+            }
+
+            //Perform math operations
+            var min = Math.min(num1, num2, num3, num4, num5);
+            var max = Math.max(num1, num2, num3, num4, num5);
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var mean = sum / 5;
+            var product = num1 * num2 * num3 * num4 * num5;
+
+            //Display math results
+            document.getElementById('min').innerHTML = "The smallest number is " + min;
+            document.getElementById('max').innerHTML = "The largest number is " + max;
+            document.getElementById('sum').innerHTML = "The sum of the numbers is " + sum;
+            document.getElementById('mean').innerHTML = "The mean is " + mean;
+            document.getElementById('product').innerHTML = "The product is " + product;
+
+        }
+
+        //This function clears all Math function elements
+        function ClearMathData() {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("num3").value = "";
+            document.getElementById("num4").value = "";
+            document.getElementById("num5").value = "";
+
+            document.getElementById('min').innerHTML = "";
+            document.getElementById('max').innerHTML = "";
+            document.getElementById('sum').innerHTML = "";
+            document.getElementById('mean').innerHTML = "";
+            document.getElementById('product').innerHTML = "";
+
+            var code = document.getElementById("mathCode");
+            code.style.display = "none";
+            document.getElementById("mathToggle").textContent = "Show Code";
+
+
+        }
+
+        //This Function shows & hides the Math Functions Code
+        function ToggleMathCode() {
+            var x = document.getElementById("mathCode");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                document.getElementById("mathToggle").textContent = "Hide Code";
+            } else {
+                x.style.display = "none";
+                document.getElementById("mathToggle").textContent = "Show Code";
+            }
+        }
+        //This is the end of the Math functions
+    </script>
+
+
 </body>
 
 </html>
