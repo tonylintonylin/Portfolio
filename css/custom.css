@@ -656,8 +656,8 @@ pre code {
 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
     margin-right: auto;
     margin-left: auto
 }
@@ -671,8 +671,8 @@ pre code {
 .container-fluid,
 .container-sm {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
     margin-right: auto;
     margin-left: auto
 }
@@ -2027,6 +2027,10 @@ pre code {
 .form-control[readonly] {
     background-color: #e9ecef;
     opacity: 1
+}
+
+input[type=number] {
+    width: 75px;
 }
 
 input[type=date].form-control,
@@ -10127,4 +10131,12 @@ ol.AppLayout-module--instructions--3iq2G {
     padding: 16px 16px;
     background-color: var(--info);
     color: white;
+}
+
+img.modalIMG {
+    cursor: pointer;
+}
+
+a.swap {
+    cursor: pointer;
 }

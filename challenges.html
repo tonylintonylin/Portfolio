@@ -6,7 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Tony Lin</title>
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/monokai.min.css">
 </head>
 
 <body>
@@ -17,7 +19,7 @@
                 <a href="index.html">Home</a>
                 <a href="projects.html">Projects</a>
                 <a aria-current="page" class="active" href="challenges.html">Coding Challenges</a>
-                <a class="nav-item nav-link" href="about.html">About Me</a>
+                <a href="about.html">About Me</a>
             </nav>
         </div>
         <div id="Header-module--fixedHeader--1G4TT">
@@ -26,17 +28,20 @@
                     <a href="index.html">Home</a>
                     <a href="projects.html">Projects</a>
                     <a aria-current="page" class="active" href="challenges.html">Coding Challenges</a>
-                    <a class="nav-item nav-link" href="about.html">About Me</a>
+                    <a href="about.html">About Me</a>
                 </nav>
             </div>
             <nav class="d-sm-none navbar navbar-light">
                 <a class="navbar-brand" href="index.html">Tony Lin</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><spanclass="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <spanclass="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <a class="nav-item nav-link" href="index.html">Home</a>
                         <a class="nav-item nav-link" href="projects.html">Projects</a>
-                        <a aria-current="page" class="nav-item nav-link active" href="challenges.html">Coding Challenges</a>
+                        <a aria-current="page" class="nav-item nav-link active" href="challenges.html">Coding
+                            Challenges</a>
                         <a class="nav-item nav-link" href="about.html">About Me</a>
                     </ul>
                 </div>
@@ -45,486 +50,471 @@
     </header>
     <main class="my-5">
         <div class="container container-wide">
-
-
             <div class="row mb-5 mb-sm-4">
                 <div class="col-sm-6 px-0 px-sm-2">
                     <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
-                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div><img aria-hidden="true" src="images/map.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
-                                    <picture>
-                                        <source srcset="/images/map.png 150w,
-                                        /images/map.png 300w,
-                                        /images/map.png 600w,
-                                        /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
-                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/572a252b6e1e34b40aa499beb1074257/aabdf/america.jpg 150w,
-                                            /images/map.png 300w,
-                                            /images/map.png 600w,
-                                            /images/map.png 800w"
-                                            src="/images/map.png" alt=""
-                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
-                                    </picture>
-                                </noscript>
+                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div>
+                        <img aria-hidden="true" class="modalIMG" src="images/palindrome.PNG" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
+                            <picture>
+                                <source srcset="/images/palindrome.PNG 150w,
+                                        images/palindrome.PNG 300w,
+                                        /images/palindrome.PNG 600w,
+                                        /images/palindrome.PNG 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
+                                    loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/images/palindrome.PNG 150w,
+                                            /images/palindrome.PNG 300w,
+                                            /images/palindrome.PNG 600w,
+                                            /images/palindrome.PNG 800w" src="/images/palindrome.PNG" alt=""
+                                    style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
+                            </picture>
+                        </noscript>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
-                        <h5 class="mb-1">America</h5>
+                        <h5 class="mb-1">Palindrome</h5>
                         <div class="text-muted">
-                            <div>6 years old &middot; 1998</div>
+                            A palindrome is a word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
                         </div>
                     </div>
                     <div>
-                        <p>handball
+                        <p>Enter some text to see if it's a palindrome.</p>
+                        <p>
+                            <input id="text" type="text">
+                            <span id="palindromeOutput"></span>
+                        </p>
+                        <p>
+                            <button class="btn btn-primary" onclick="PalindromeFunction(text.value, palindromeOutput)">Submit</button>
+                            <button type="button" id="modalBtn" class="modalBtn btn btn-success">Show Code</button>
                         </p>
                     </div>
                 </div>
-            </div>
-
-
-
-
-
-
-
-
-            <div class="row mb-5 mb-sm-4">
-                <div class="col-sm-6 px-0 px-sm-2">
-                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
-                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div><img aria-hidden="true" src="images/map.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
-                                    <picture>
-                                        <source srcset="/images/map.png 150w,
-                                        /images/map.png 300w,
-                                        /images/map.png 600w,
-                                        /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
-                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/static/572a252b6e1e34b40aa499beb1074257/aabdf/america.jpg 150w,
-                                            /images/map.png 300w,
-                                            /images/map.png 600w,
-                                            /images/map.png 800w"
-                                            src="/images/map.png" alt=""
-                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
-                                    </picture>
-                                </noscript>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
-                        <h5 class="mb-1">America</h5>
-                        <div class="text-muted">
-                            <div>6 years old &middot; 1998</div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>handball
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5 mb-sm-4">
-                <div class="col-sm-6 px-0 px-sm-2">
-                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
-                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div><img aria-hidden="true" src="/images/map.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
-                                    <picture>
-                                        <source srcset="/images/map.png 150w,
-                                        /images/map.png 300w,
-                                        /images/map.png 600w,
-                                        /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
-                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/images/map.png 150w,
-                                            /images/map.png 300w,
-                                            /images/map.png 600w,
-                                            /images/map.png 800w"
-                                            src="/images/map.png" alt=""
-                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
-                                    </picture>
-                                </noscript>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
-                        <h5 class="mb-1">bad</h5>
-                        <div class="text-muted">
-                            <div>7 years old &middot; 1998</div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>bad</p>
-                        <p>tron-delay</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5 mb-sm-4">
-                <div class="col-sm-6 px-0 px-sm-2">
-                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
-                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div><img aria-hidden="true" src="/images/map.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
-                                    <picture>
-                                        <source srcset="/images/map.png 150w,
-                                        /images/map.png 300w,
-                                        /images/map.png 600w,
-                                        /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
-                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/images/map.png 150w,
-                                            /images/map.png 300w,
-                                            /images/map.png 600w,
-                                            /images/map.png 800w"
-                                            src="/images/map.png" alt=""
-                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
-                                    </picture>
-                                </noscript>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
-                        <h5 class="mb-1">Child sales</h5>
-                        <div class="text-muted">
-                            <div>11 years old &middot; 1998</div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>I der:</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5 mb-sm-4">
-                <div class="col-sm-6 px-0 px-sm-2">
-                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
-                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div><img aria-hidden="true" src="/images/map.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
-                                    <picture>
-                                        <source srcset="/images/map.png 150w,
-                                        /images/map.png 300w,
-                                        /images/map.png 600w,
-                                        /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
-                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/images/map.png 150w,
-                                            /images/map.png 300w,
-                                            /images/map.png 600w,
-                                            /images/map.png 800w"
-                                            src="/images/map.png" alt=""
-                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
-                                    </picture>
-                                </noscript>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
-                        <h5 class="mb-1">grad</h5>
-                        <div class="text-muted">
-                            <div>18 years old &middot; 2016</div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Now</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-5 mb-sm-4">
-                <div class="col-sm-6 px-0 px-sm-2">
-                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
-                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div><img aria-hidden="true" src="/images/map.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
-                                    <picture>
-                                        <source srcset="/images/map.png 150w,
-                                        /images/map.png 300w,
-                                        /images/map.png 600w,
-                                        /images/map.png 800w" sizes="(max-width: 600px) 100vw, 600px" /><img
-                                            loading="lazy" sizes="(max-width: 600px) 100vw, 600px" srcset="/images/map.png 150w,
-                                            /images/map.png 300w,
-                                            /images/map.png 600w,
-                                            /images/map.png 800w"
-                                            src="/images/map.png" alt=""
-                                            style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
-                                    </picture>
-                                </noscript>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
-                        <h5 class="mb-1">My Favorite Books</h5>
-                        <div class="text-muted">
-                            <div>22 years old &middot; 2015</div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>I</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="modal fade" id="mathModal" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable">
+                <!-- The Modal -->
+                <div id="myModal" class="myModal modal">
+                    <!-- Modal content -->
                     <div class="modal-content">
-
-
                         <div class="modal-header">
-                            <h4 class="modal-title">Math Functions</h4>
-                            <button type="button" class="close" data-dismiss="modal" onclick="ClearMathData()">×</button>
+                            <span class="close">&times;</span>
+                            <h2>Palindrome Code</h2>
                         </div>
-
-
                         <div class="modal-body">
-                            <div class="container">
-                                <h1>Let's Do Some Math!</h1>
+                            <pre>
+                                <code class="javascript">
+                                    // Solving this problem by comparing the input with the input's reversed version
 
-                                Input 5 numbers between <b>1</b> and <b>100</b>.
-                                <br>
-                                <br>
-                                <!--Input Boxes-->
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <p><input id="num1" type="number" name="quantity" min="1" max="100"></p>
-                                        <p><input id="num2" type="number" name="quantity" min="1" max="100"></p>
-                                        <p><input id="num3" type="number" name="quantity" min="1" max="100"></p>
-                                        <p><input id="num4" type="number" name="quantity" min="1" max="100"></p>
-                                        <p><input id="num5" type="number" name="quantity" min="1" max="100"></p>
-                                    </div>
+                                    function PalindromeFunction(input, result) {
 
-                                    <div class="col-sm-8">
-                                        <!--Labels to display results-->
-                                        <p></p>
-                                        <div id="min"></div>
-                                        <p></p>
-                                        <p></p>
-                                        <div id="max"></div>
-                                        <p></p>
-                                        <p></p>
-                                        <div id="mean"></div>
-                                        <p></p>
-                                        <p></p>
-                                        <div id="sum"></div>
-                                        <p></p>
-                                        <p></p>
-                                        <div id="product"></div>
-                                        <p></p>
-                                    </div>
-                                </div>
-                                <p><button id="submit" class="btn btn-primary" onclick="SolveMath()">Submit</button></p>
-                                <p><button id="clear" class="btn btn-outline-primary" onclick="ClearMathData()">Clear</button></p>
-                                <p><button id="mathToggle" class="btn btn-outline-info" onclick="ToggleMathCode()">Show Code</button></p>
+                                        // Alert empty input
+                                        if (input == "") {
+                                            alert("Please enter some text, this could be a word, phrase, or number.");
+                                            return;
+                                        }
 
+                                        // Case insensitive
+                                        var str = input.toLowerCase();
 
-                            </div>
-                            <div class="container" id="mathCode" style="display: none">
-                                <div>
-                                    <div id="highlighter_374009" class="syntaxhighlighter  js">
-                                        <div class="toolbar"><span><a href="http://shaneseblackportfolio.azurewebsites.net/#" class="toolbar_item command_help help">?</a></span></div>
-                                        <table border="0" cellpadding="0" cellspacing="0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="gutter">
-                                                        <div class="line number1 index0 alt2">1</div>
-                                                        <div class="line number2 index1 alt1">2</div>
-                                                        <div class="line number3 index2 alt2">3</div>
-                                                        <div class="line number4 index3 alt1">4</div>
-                                                        <div class="line number5 index4 alt2">5</div>
-                                                        <div class="line number6 index5 alt1">6</div>
-                                                        <div class="line number7 index6 alt2">7</div>
-                                                        <div class="line number8 index7 alt1">8</div>
-                                                        <div class="line number9 index8 alt2">9</div>
-                                                        <div class="line number10 index9 alt1">10</div>
-                                                        <div class="line number11 index10 alt2">11</div>
-                                                        <div class="line number12 index11 alt1">12</div>
-                                                        <div class="line number13 index12 alt2">13</div>
-                                                        <div class="line number14 index13 alt1">14</div>
-                                                        <div class="line number15 index14 alt2">15</div>
-                                                        <div class="line number16 index15 alt1">16</div>
-                                                        <div class="line number17 index16 alt2">17</div>
-                                                        <div class="line number18 index17 alt1">18</div>
-                                                        <div class="line number19 index18 alt2">19</div>
-                                                        <div class="line number20 index19 alt1">20</div>
-                                                        <div class="line number21 index20 alt2">21</div>
-                                                        <div class="line number22 index21 alt1">22</div>
-                                                        <div class="line number23 index22 alt2">23</div>
-                                                        <div class="line number24 index23 alt1">24</div>
-                                                        <div class="line number25 index24 alt2">25</div>
-                                                        <div class="line number26 index25 alt1">26</div>
-                                                        <div class="line number27 index26 alt2">27</div>
-                                                        <div class="line number28 index27 alt1">28</div>
-                                                        <div class="line number29 index28 alt2">29</div>
-                                                        <div class="line number30 index29 alt1">30</div>
-                                                        <div class="line number31 index30 alt2">31</div>
-                                                        <div class="line number32 index31 alt1">32</div>
-                                                        <div class="line number33 index32 alt2">33</div>
-                                                        <div class="line number34 index33 alt1">34</div>
-                                                        <div class="line number35 index34 alt2">35</div>
-                                                        <div class="line number36 index35 alt1">36</div>
-                                                        <div class="line number37 index36 alt2">37</div>
-                                                        <div class="line number38 index37 alt1">38</div>
-                                                        <div class="line number39 index38 alt2">39</div>
-                                                        <div class="line number40 index39 alt1">40</div>
-                                                        <div class="line number41 index40 alt2">41</div>
-                                                        <div class="line number42 index41 alt1">42</div>
-                                                        <div class="line number43 index42 alt2">43</div>
-                                                    </td>
-                                                    <td class="code">
-                                                        <div class="container">
-                                                            <div class="line number1 index0 alt2"><code class="js comments">//This is the beginning of the Math functions</code></div>
-                                                            <div class="line number2 index1 alt1"><code class="js keyword">function</code> <code class="js plain">SolveMath() {</code></div>
-                                                            <div class="line number3 index2 alt2">&nbsp;</div>
-                                                            <div class="line number4 index3 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//This assigns the input numbers to variables</code></div>
-                                                            <div class="line number5 index4 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num1 = parseInt(document.getElementById(</code><code class="js string">"num1"</code><code class="js plain">).value);</code></div>
-                                                            <div class="line number6 index5 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num2 = parseInt(document.getElementById(</code><code class="js string">"num2"</code><code class="js plain">).value);</code></div>
-                                                            <div class="line number7 index6 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num3 = parseInt(document.getElementById(</code><code class="js string">"num3"</code><code class="js plain">).value);</code></div>
-                                                            <div class="line number8 index7 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num4 = parseInt(document.getElementById(</code><code class="js string">"num4"</code><code class="js plain">).value);</code></div>
-                                                            <div class="line number9 index8 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">let num5 = parseInt(document.getElementById(</code><code class="js string">"num5"</code><code class="js plain">).value);</code></div>
-                                                            <div class="line number10 index9 alt1">&nbsp;</div>
-                                                            <div class="line number11 index10 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Check to ensure all numbers entered are between 1 and 100</code></div>
-                                                            <div class="line number12 index11 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code> <code class="js plain">(num1 &gt; 100 || num2 &gt; 100 || num3 &gt; 100 || num4 &gt; 100 || num5 &gt; 100) {</code></div>
-                                                            <div class="line number13 index12 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(</code><code class="js string">"Please enter a number between 1 and 100."</code>
-                                                                <code class="js plain">);</code>
-                                                            </div>
-                                                            <div class="line number14 index13 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ClearMathData();</code></div>
-                                                            <div class="line number15 index14 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code><code class="js plain">;</code></div>
-                                                            <div class="line number16 index15 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div>
-                                                            <div class="line number17 index16 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code> <code class="js plain">(num1 &lt; 1 || num2 &lt; 1 || num3 &lt; 1 || num4 &lt; 1 || num5 &lt; 1) {</code></div>
-                                                            <div class="line number18 index17 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(</code><code class="js string">"Please enter a number between 1 and 100."</code>
-                                                                <code class="js plain">);</code>
-                                                            </div>
-                                                            <div class="line number19 index18 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ClearMathData();</code></div>
-                                                            <div class="line number20 index19 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code><code class="js plain">;</code></div>
-                                                            <div class="line number21 index20 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div>
-                                                            <div class="line number22 index21 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Check to ensure user enter numbers</code></div>
-                                                            <div class="line number23 index22 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">if</code> <code class="js plain">(isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4) || isNaN(num5)) {</code></div>
-                                                            <div class="line number24 index23 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">alert(</code><code class="js string">"Please enter a number between 1 and 100."</code>
-                                                                <code class="js plain">);</code>
-                                                            </div>
-                                                            <div class="line number25 index24 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">ClearMathData();</code></div>
-                                                            <div class="line number26 index25 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">return</code><code class="js plain">;</code></div>
-                                                            <div class="line number27 index26 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">}</code></div>
-                                                            <div class="line number28 index27 alt1">&nbsp;</div>
-                                                            <div class="line number29 index28 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Perform math operations</code></div>
-                                                            <div class="line number30 index29 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">min = Math.min(num1, num2, num3, num4, num5);</code></div>
-                                                            <div class="line number31 index30 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">max = Math.max(num1, num2, num3, num4, num5);</code></div>
-                                                            <div class="line number32 index31 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">sum = num1 + num2 + num3 + num4 + num5;</code></div>
-                                                            <div class="line number33 index32 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">mean = sum / 5;</code></div>
-                                                            <div class="line number34 index33 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js keyword">var</code> <code class="js plain">product = num1 * num2 * num3 * num4 * num5;</code></div>
-                                                            <div class="line number35 index34 alt2">&nbsp;</div>
-                                                            <div class="line number36 index35 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js comments">//Display math results</code></div>
-                                                            <div class="line number37 index36 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'min'</code><code class="js plain">).innerHTML = </code>
-                                                                <code class="js string">"The smallest number is "</code> <code class="js plain">+ min;</code></div>
-                                                            <div class="line number38 index37 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'max'</code><code class="js plain">).innerHTML = </code>
-                                                                <code class="js string">"The largest number is "</code> <code class="js plain">+ max;</code></div>
-                                                            <div class="line number39 index38 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'sum'</code><code class="js plain">).innerHTML = </code>
-                                                                <code class="js string">"The sum of the numbers is "</code> <code class="js plain">+ sum;</code></div>
-                                                            <div class="line number40 index39 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'mean'</code><code class="js plain">).innerHTML = </code>
-                                                                <code class="js string">"The mean is "</code> <code class="js plain">+ mean;</code></div>
-                                                            <div class="line number41 index40 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">document.getElementById(</code><code class="js string">'product'</code><code class="js plain">).innerHTML = </code>
-                                                                <code class="js string">"The product is "</code> <code class="js plain">+ product;</code></div>
-                                                            <div class="line number42 index41 alt1">&nbsp;</div>
-                                                            <div class="line number43 index42 alt2"><code class="js plain">}</code></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                                        // Ensure no spaces
+                                        str = input.replace(/ /g, "");
+
+                                        var reversed = "";
+
+                                        var length = str.length - 1;
+
+                                        for (i = length; i >= 0; i--) {
+                                            reversed += str[i];
+                                        }
+
+                                        var output = "";
+
+                                        if (str === reversed) {
+                                            output = input + " and " + reversed + " are palindromes!"
+                                        } else {
+                                            output = input + " and " + reversed + " are not palindromes!"
+                                        }
+                                        
+                                        result.innerHTML = output;
+                                    }
+                                </code>
+                            </pre>
                         </div>
-
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="ClearMathData()">Close</button>
+                            <div>Enter some text to see if it's a palindrome.
+                                <input id="modalText" type="text">
+                                <button class="btn btn-primary" onclick="PalindromeFunction(modalText.value, palindromeModalOutput)">Submit</button>
+                                <span id="palindromeModalOutput"></span>
+                                <button type="button" id="closeBtn" class="closeBtn btn btn-danger">
+                                    Close
+                                </button>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+            <div class="row mb-5 mb-sm-4">
+                <div class="col-sm-6 px-0 px-sm-2">
+                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
+                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div>
+                        <img aria-hidden="true" class="modalIMG" src="images/fizzbuzz.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
+                            <picture>
+                                <source srcset="/images/fizzbuzz.PNG 150w,
+                                                    images/fizzbuzz.PNG 300w,
+                                                    /images/fizzbuzz.PNG 600w,
+                                                    /images/fizzbuzz.PNG 800w"
+                                    sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy"
+                                    sizes="(max-width: 600px) 100vw, 600px" srcset="/images/fizzbuzz.PNG 150w,
+                                                        /images/fizzbuzz.PNG 300w,
+                                                        /images/fizzbuzz.PNG 600w,
+                                                        /images/fizzbuzz.PNG 800w" src="/images/fizzbuzz.PNG" alt=""
+                                    style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
+                            </picture>
+                        </noscript>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
+                        <h5 class="mb-1">FizzBuzz</h5>
+                        <div class="text-muted">
+                            Fizz buzz is a group word game where players take turns counting incrementally, replacing any number divisible by three with the word "Fizz", any number divisible by five with the word "Buzz", and any number divisible by both three and five with the word
+                            "FizzBuzz".
+                        </div>
+                    </div>
+                    <div>
+                        <p>Enter numbers between 1-100 as replacements for Fizz and Buzz and a script will simulate the game being played from 1-100.</p>
+                        <p>
+                            Fizz: <input id="fizzbuzzNum1" type="number"> Buzz: <input id="fizzbuzzNum2" type="number">
+                        </p>
+                        <p>
+                            <button class="btn btn-primary" onclick="FizzBuzzFunction(fizzbuzzNum1.value, fizzbuzzNum2.value)">Submit</button>
+                            <button type="button" id="modalBtn" class="modalBtn btn btn-success">Show Code</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- The Modal -->
+                <div id="myModal" class="myModal modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>FizzBuzz Code</h2>
+                        </div>
+                        <div class="modal-body">
+                            <pre>
+                            <code class="javascript">
+                                function FizzBuzzFunction(num1, num2) {
+                                    
+                                    var alertOutput = "";
+                                    
+                                    // Ensure both inputs are between 1 and 100
+                                    if (num1 > 100 || num1 < 1 || num2> 100 || num2 < 1) { 
+                                        alert("Please enter numbers between 1 and 100."); 
+                                        return; 
+                                    } 
+                                    
+                                    for(i=1; i < 101; i++) { 
+                                        if (i % (num1 * num2)==0) alertOutput +="FizzBuzz " ; 
+                                        else if ((i % num1==0)) alertOutput+="Fizz " ; 
+                                        else if ((i % num2==0)) alertOutput +="Buzz " ; 
+                                        else alertOutput +=i + " " ; 
+                                    } 
+                                    
+                                    alert(alertOutput); 
+                                }
+                            </code>
+                        </pre>
+                            <p>Enter numbers between 1-100 as replacements for Fizz and Buzz and a script will simulate the game being played from 1-100.
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                Fizz <input id="fizzbuzzModalNum1" type="number"> Buzz: <input id="fizzbuzzModalNum2" type="number">
+                                <button class="btn btn-primary" onclick="FizzBuzzFunction(fizzbuzzModalNum1.value, fizzbuzzModalNum2.value)">Submit</button>
+                                <button type="button" id="closeBtn" class="closeBtn btn btn-danger">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 mb-sm-4">
+                <div class="col-sm-6 px-0 px-sm-2">
+                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
+                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div>
+                        <img aria-hidden="true" class="modalIMG" src="images/factorials.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
+                            <picture>
+                                <source srcset="/images/factorials.PNG 150w,
+                                                                images/factorials.PNG 300w,
+                                                                /images/factorials.PNG 600w,
+                                                                /images/factorials.PNG 800w"
+                                    sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy"
+                                    sizes="(max-width: 600px) 100vw, 600px" srcset="/images/factorials.PNG 150w,
+                                                                    /images/factorials.PNG 300w,
+                                                                    /images/factorials.PNG 600w,
+                                                                    /images/factorials.PNG 800w"
+                                    src="/images/factorials.PNG" alt=""
+                                    style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
+                            </picture>
+                        </noscript>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
+                        <h5 class="mb-1">Factorials</h5>
+                        <div class="text-muted">
+                            A Factorial is the product of an integer and all the integers below it
+                        </div>
+                        <div class="text-muted">
+                            e.g. factorial four ( 4! ) is equal to 24.
+                        </div>
+                    </div>
+                    <div>
+                        <p>Enter a non-negative number to find out it's factorial!</p>
+                        <p>
+                            <input id="factorialNum" type="number">
+                            <span id="factorialOutput"></span>
+                        </p>
+                        <p>
+                            <button class="btn btn-primary" onclick="FactorialFunction(factorialNum.value, factorialOutput)">Submit</button>
+                            <button type="button" id="modalBtn" class="modalBtn btn btn-success">Show Code</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- The Modal -->
+                <div id="myModal" class="myModal modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>FizzBuzz Code</h2>
+                        </div>
+                        <div class="modal-body">
+                            <pre>
+                                <code class="javascript">
+                                    function FactorialFunction(input, result) {
+
+                                        var factorial = 1;
+
+                                        if (input < 0) { 
+                                            alert("Please enter a non-negative number."); 
+                                            return; 
+                                        } 
+                                        
+                                        for (i=input; i> 0; i--) {
+                                            factorial = factorial * i;
+                                        }
+
+                                        result.innerHTML = input + "! = " + factorial;
+                                    }
+                                </code>
+                            </pre>
+                            <p>Enter a non-negative number to find out it's factorial!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <input id="factorialModalNum" type="number">
+                                <button class="btn btn-primary" onclick="FactorialFunction(factorialModalNum.value, factorialModalOutput)">Submit</button>
+                                <span id="factorialModalOutput"></span>
+                                <button type="button" id="closeBtn" class="closeBtn btn btn-danger">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 mb-sm-4">
+                <div class="col-sm-6 px-0 px-sm-2">
+                    <div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden">
+                        <div aria-hidden="true" style="width:100%;padding-bottom:56%"></div>
+                        <img aria-hidden="true" class="modalIMG" src="images/roman-numerals.jpg" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms" /><noscript>
+                            <picture>
+                                <source srcset="/images/roman-numerals.jpg 150w,
+                                                                images/roman-numerals.jpg 300w,
+                                                                /images/roman-numerals.jpg 600w,
+                                                                /images/roman-numerals.jpg 800w"
+                                    sizes="(max-width: 600px) 100vw, 600px" /><img loading="lazy"
+                                    sizes="(max-width: 600px) 100vw, 600px" srcset="/images/roman-numerals.jpg 150w,
+                                                                    /images/roman-numerals.jpg 300w,
+                                                                    /images/roman-numerals.jpg 600w,
+                                                                    /images/roman-numerals.jpg 800w"
+                                    src="/images/roman-numerals.jpg" alt=""
+                                    style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" />
+                            </picture>
+                        </noscript>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pt-4 pb-3 py-sm-0 mb-sm-3 text-center text-sm-left">
+                        <h5 class="mb-1">Roman Numerials Coverter</h5>
+                        <div class="text-muted">
+                            Roman Numerials is a numerical system represented by combinations of letters from the Latin alphabet. A letter placed after another of greater value adds, whereas a letter placed before another of greater value subtracts.
+                        </div>
+
+                        <div class="text-muted">
+                            I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1,000
+                        </div>
+                        <div class="text-muted">
+                            e.g. XVI = 16, XC = 90
+                        </div>
+                    </div>
+                    <div>
+                        <p>Enter a number or Roman numeral to convert them to the other.
+                        </p>
+                        <p>
+                            Number: <input id="numberToRomanNumeral" type="number">
+                            <span id="numberToRomanNumeralOutput"></span><br> Roman Numeral: <input id="romanNumeralToNum" class="my-1" type="text">
+                            <span id="romanNumeralToNumOutput"></span>
 
 
+                        </p>
+                        <p>
+                            <button class="btn btn-primary" onclick="RomanNumeralsFunction(numberToRomanNumeral.value, numberToRomanNumeralOutput, romanNumeralToNum.value, romanNumeralToNumOutput)">Submit</button>
+                            <button type="button" id="modalBtn" class="modalBtn btn btn-success">Show Code</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- The Modal -->
+                <div id="myModal" class="myModal modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Roman Numerials Coverter Code</h2>
+                        </div>
+                        <div class="modal-body">
+                            <pre>
+                                <code class="javascript">
+                                    function RomanNumeralsFunction(num, toRomanNumResult, romanNum, toNumResult) {
 
+                                        // Hold dictionary values to use Roman Numerals
+                                        var RomanNumerals = {
+                                            M: 1000,
+                                            CM: 900,
+                                            D: 500,
+                                            CD: 400,
+                                            C: 100,
+                                            XC: 90,
+                                            L: 50,
+                                            XL: 40,
+                                            X: 10,
+                                            IX: 9,
+                                            V: 5,
+                                            IV: 4,
+                                            I: 1
+                                        }
 
+                                        // Number to Roman Numeral
+                                        // Ensure Number input is valid, can be empty, and cap at 10000                                        
+                                        if (num < 1 && num != "" || num > 10000) {
+                                            alert("Please enter a number from 1-10000! \nThere are no negative Roman Numerals, nor is there a Roman Numeral for zero.");
+                                            return;
+                                        }
 
+                                        let toRomanNumOutput = "";
+
+                                        for (let i in RomanNumerals) {
+
+                                            // Loop through the list of Roman Numerals ordered from greatest to least
+                                            while (num >= RomanNumerals[i]) {
+                                                num -= RomanNumerals[i]
+                                                toRomanNumOutput += i
+                                            }
+                                        }
+
+                                        toRomanNumResult.innerHTML = toRomanNumOutput;
+
+                                        // Roman Numeral to Number
+                                        let toNumOutput = 0;
+
+                                        roman = romanNum.toUpperCase();
+
+                                        for (let i = 0; i < roman.length; i++) {
+
+                                            switch (roman[i]) {
+                                                case 'M':
+                                                    toNumOutput += 1000;
+                                                    break;
+                                                case 'D':
+                                                    toNumOutput += 500;
+                                                    break;
+                                                case 'C':
+                                                    if (roman.length > (i + 1) && roman[i + 1] == 'M') {
+                                                        toNumOutput += 900;
+                                                        i++;
+                                                        break;
+                                                    } else if (roman.length > (i + 1) && roman[i + 1] == 'D') {
+                                                        toNumOutput += 400;
+                                                        i++;
+                                                        break;
+                                                    } else {
+                                                        toNumOutput += 100;
+                                                        break;
+                                                    }
+                                                case 'L':
+                                                    toNumOutput += 50;
+                                                    break;
+                                                case 'X':
+                                                    if (roman.length > (i + 1) && roman[i + 1] == 'C') {
+                                                        toNumOutput += 90;
+                                                        i++;
+                                                        break;
+                                                    } else if (roman.length > (i + 1) && roman[i + 1] == 'L') {
+                                                        toNumOutput += 40;
+                                                        i++;
+                                                        break;
+                                                    } else {
+                                                        toNumOutput += 10;
+                                                        break;
+                                                    }
+                                                case 'V':
+                                                    toNumOutput += 5;
+                                                    break;
+                                                case 'I':
+                                                    if (roman.length > (i + 1) && roman[i + 1] == 'X') {
+                                                        toNumOutput += 9;
+                                                        i++;
+                                                        break;
+                                                    } else if (roman.length > (i + 1) && roman[i + 1] == 'V') {
+                                                        toNumOutput += 4;
+                                                        i++;
+                                                        break;
+                                                    } else {
+                                                        toNumOutput += 1;
+                                                        break;
+                                                    }
+                                                default:
+                                                    return false;
+                                            }
+                                        }
+                                        toNumResult.innerHTML = toNumOutput;
+                                    }
+                                </code>
+                            </pre>
+                            <p>Enter a number or Roman numeral to convert them to the other.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                Number: <input id="numberToRomanNumeralModal" type="number">
+                                <span id="numberToRomanNumeralModalOutput"></span><br>Roman Numeral: <input id="romanNumeralToNumModal" type="text">
+                                <span id="romanNumeralToNumModalOutput"></span>
+                                <button class="btn btn-primary" onclick="RomanNumeralsFunction(numberToRomanNumeralModal.value, numberToRomanNumeralModalOutput, romanNumeralToNumModal.value, romanNumeralToNumModalOutput)">Submit</button>
+                                <button type="button" id="closeBtn" class="closeBtn btn btn-danger">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
     <script>
-        //This is the beginning of the Math functions
-        function SolveMath() {
-
-            //This assigns the input numbers to variables
-            let num1 = parseInt(document.getElementById("num1").value);
-            let num2 = parseInt(document.getElementById("num2").value);
-            let num3 = parseInt(document.getElementById("num3").value);
-            let num4 = parseInt(document.getElementById("num4").value);
-            let num5 = parseInt(document.getElementById("num5").value);
-
-            //Check to ensure all numbers entered are between 1 and 100
-            if (num1 > 100 || num2 > 100 || num3 > 100 || num4 > 100 || num5 > 100) {
-                alert("Please enter a number between 1 and 100.");
-                ClearMathData();
-                return;
-            }
-            if (num1 < 1 || num2 < 1 || num3 < 1 || num4 < 1 || num5 < 1) {
-                alert("Please enter a number between 1 and 100.");
-                ClearMathData();
-                return;
-            }
-            //Check to ensure user enter numbers
-            if (isNaN(num1) || isNaN(num2) || isNaN(num3) || isNaN(num4) || isNaN(num5)) {
-                alert("Please enter a number between 1 and 100.");
-                ClearMathData();
-                return;
-            }
-
-            //Perform math operations
-            var min = Math.min(num1, num2, num3, num4, num5);
-            var max = Math.max(num1, num2, num3, num4, num5);
-            var sum = num1 + num2 + num3 + num4 + num5;
-            var mean = sum / 5;
-            var product = num1 * num2 * num3 * num4 * num5;
-
-            //Display math results
-            document.getElementById('min').innerHTML = "The smallest number is " + min;
-            document.getElementById('max').innerHTML = "The largest number is " + max;
-            document.getElementById('sum').innerHTML = "The sum of the numbers is " + sum;
-            document.getElementById('mean').innerHTML = "The mean is " + mean;
-            document.getElementById('product').innerHTML = "The product is " + product;
-
-        }
-
-        //This function clears all Math function elements
-        function ClearMathData() {
-            document.getElementById("num1").value = "";
-            document.getElementById("num2").value = "";
-            document.getElementById("num3").value = "";
-            document.getElementById("num4").value = "";
-            document.getElementById("num5").value = "";
-
-            document.getElementById('min').innerHTML = "";
-            document.getElementById('max').innerHTML = "";
-            document.getElementById('sum').innerHTML = "";
-            document.getElementById('mean').innerHTML = "";
-            document.getElementById('product').innerHTML = "";
-
-            var code = document.getElementById("mathCode");
-            code.style.display = "none";
-            document.getElementById("mathToggle").textContent = "Show Code";
-
-
-        }
-
-        //This Function shows & hides the Math Functions Code
-        function ToggleMathCode() {
-            var x = document.getElementById("mathCode");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                document.getElementById("mathToggle").textContent = "Hide Code";
-            } else {
-                x.style.display = "none";
-                document.getElementById("mathToggle").textContent = "Show Code";
-            }
-        }
-        //This is the end of the Math functions
+        hljs.initHighlightingOnLoad();
     </script>
-
-
 </body>
 
 </html>
