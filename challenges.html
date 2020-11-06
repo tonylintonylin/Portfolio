@@ -19,7 +19,7 @@
                 <a href="index.html">Home</a>
                 <a href="projects.html">Projects</a>
                 <a aria-current="page" class="active" href="challenges.html">Coding Challenges</a>
-                <a href="about.html">About Me</a>
+                <!--<a href="about.html">About Me</a>-->
             </nav>
         </div>
         <div id="Header-module--fixedHeader--1G4TT">
@@ -28,7 +28,7 @@
                     <a href="index.html">Home</a>
                     <a href="projects.html">Projects</a>
                     <a aria-current="page" class="active" href="challenges.html">Coding Challenges</a>
-                    <a href="about.html">About Me</a>
+                    <!--<a href="about.html">About Me</a>-->
                 </nav>
             </div>
             <nav class="d-sm-none navbar navbar-light">
@@ -42,7 +42,7 @@
                         <a class="nav-item nav-link" href="projects.html">Projects</a>
                         <a aria-current="page" class="nav-item nav-link active" href="challenges.html">Coding
                             Challenges</a>
-                        <a class="nav-item nav-link" href="about.html">About Me</a>
+                        <!--<a class="nav-item nav-link" href="about.html">About Me</a>-->
                     </ul>
                 </div>
             </nav>
@@ -209,10 +209,10 @@
                                         return; 
                                     } 
                                     
-                                    for(i=1; i < 101; i++) { 
-                                        if (i % (num1 * num2)==0) alertOutput +="FizzBuzz " ; 
-                                        else if ((i % num1==0)) alertOutput+="Fizz " ; 
-                                        else if ((i % num2==0)) alertOutput +="Buzz " ; 
+                                    for(i = 1; i < 101; i++) { 
+                                        if ((i % num1 === 0) && (i % num2 === 0)) alertOutput += "FizzBuzz ";
+                                        else if ((i % num1 == 0)) alertOutput +="Fizz " ; 
+                                        else if ((i % num2 == 0)) alertOutput +="Buzz " ; 
                                         else alertOutput +=i + " " ; 
                                     } 
                                     

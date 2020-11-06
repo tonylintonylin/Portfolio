@@ -247,7 +247,7 @@ function FizzBuzzFunction(num1, num2) {
     }
 
     for (i = 1; i < 101; i++) {
-        if (i % (num1 * num2) == 0) alertOutput += "FizzBuzz ";
+        if ((i % num1 === 0) && (i % num2 === 0)) alertOutput += "FizzBuzz ";
         else if ((i % num1 == 0)) alertOutput += "Fizz ";
         else if ((i % num2 == 0)) alertOutput += "Buzz ";
         else alertOutput += i + " ";
